@@ -1,0 +1,19 @@
+{
+	"installed_packages":
+	[
+		"AngularJS",
+		"DocBlockr",
+		"FileModifyStatus",
+		"JSHint Gutter",
+		"Markdown Preview",
+		"MarkdownEditing",
+		"Modific",
+		"SideBarEnhancements",
+		"SideBarGit",
+		"SublimeBlockCursor",
+		"SublimeLinter",
+		"SublimeLinter-contrib-eslint",
+		"Theme - Nil",
+		"TidyTabs"
+	]
+}

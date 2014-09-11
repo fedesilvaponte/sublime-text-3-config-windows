@@ -1,0 +1,1345 @@
+{
+	"folder_history":
+	[
+		"/C/git/Galileo-Web",
+		"/C/git/mosaic-web"
+	],
+	"last_version": 3065,
+	"last_window_id": 2,
+	"log_indexing": false,
+	"settings":
+	{
+		"new_window_height": 728.0,
+		"new_window_settings":
+		{
+			"auto_complete":
+			{
+				"selected_items":
+				[
+				]
+			},
+			"build_system": "",
+			"command_palette":
+			{
+				"height": 81.0,
+				"selected_items":
+				[
+					[
+						"insta",
+						"Package Control: Install Package"
+					]
+				],
+				"width": 400.0
+			},
+			"console":
+			{
+				"height": 126.0,
+				"history":
+				[
+					"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+				]
+			},
+			"distraction_free":
+			{
+				"menu_visible": true,
+				"show_minimap": false,
+				"show_open_files": false,
+				"show_tabs": false,
+				"side_bar_visible": false,
+				"status_bar_visible": false
+			},
+			"file_history":
+			[
+			],
+			"find":
+			{
+				"height": 0.0
+			},
+			"find_in_files":
+			{
+				"height": 0.0,
+				"where_history":
+				[
+				]
+			},
+			"find_state":
+			{
+				"case_sensitive": false,
+				"find_history":
+				[
+				],
+				"highlight": true,
+				"in_selection": false,
+				"preserve_case": false,
+				"regex": false,
+				"replace_history":
+				[
+				],
+				"reverse": false,
+				"show_context": true,
+				"use_buffer2": true,
+				"whole_word": false,
+				"wrap": true
+			},
+			"incremental_find":
+			{
+				"height": 0.0
+			},
+			"input":
+			{
+				"height": 0.0
+			},
+			"menu_visible": true,
+			"output.find_results":
+			{
+				"height": 0.0
+			},
+			"replace":
+			{
+				"height": 0.0
+			},
+			"save_all_on_build": true,
+			"select_file":
+			{
+				"height": 0.0,
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"select_project":
+			{
+				"height": 0.0,
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"select_symbol":
+			{
+				"height": 0.0,
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"show_minimap": true,
+			"show_open_files": false,
+			"show_tabs": true,
+			"side_bar_visible": true,
+			"side_bar_width": 150.0,
+			"status_bar_visible": true,
+			"template_settings":
+			{
+			}
+		},
+		"new_window_width": 777.0
+	},
+	"windows":
+	[
+		{
+			"auto_complete":
+			{
+				"selected_items":
+				[
+					[
+						"d",
+						"directives"
+					],
+					[
+						"module",
+						"moduleName"
+					],
+					[
+						"modu",
+						"moduleName"
+					]
+				]
+			},
+			"buffers":
+			[
+				{
+					"file": "/C/git/Galileo-Web/app/pages/all_projects/controllers/all_projects.ctrl.js",
+					"settings":
+					{
+						"buffer_size": 2788,
+						"line_ending": "Windows"
+					}
+				},
+				{
+					"contents": "Searching 17152 files for \"teamMembers\"\n\nC:\\git\\Galileo-Web\\app\\build\\templates.js:\n 1675      \"<ul>\\r\" +\n 1676      \"\\n\" +\n 1677:     \"\\t<li ng-repeat=\\\"member in teamMembers\\\">\\r\" +\n 1678      \"\\n\" +\n 1679      \"\\t\\t<tooltip class=\\\"left\\\">\\r\" +\n\nC:\\git\\Galileo-Web\\app\\directives\\team_stack\\team_stack.html:\n    1  <ul>\n    2: 	<li ng-repeat=\"member in teamMembers\">\n    3  		<tooltip class=\"left\">\n    4  			<user-avatar user=\"member\" class=\"trigger\"></user-avatar>\n\nC:\\git\\Galileo-Web\\app\\pages\\all_projects\\all_projects.cfg.js:\n   17                  resolve: {\n   18                      pageOne: function(projects) { return projects.list({ queryParams: { count: 100 } });},\n   19:                     teamMembers: function(members) { return members.getAll(); }\n   20                  },\n   21                  templateUrl: settings.pageConfig.templateUrl,\n\nC:\\git\\Galileo-Web\\app\\pages\\all_projects\\controllers\\all_projects.ctrl.js:\n    2      /* Libraries */\n    3  ], function() {\n    4:     return function($scope, modal, pageOne, projects, $rootScope, $translate, teamMembers, $sce, transitionHelper) {\n    5          if (!localStorage.getItem('revisit') && !_.has(window, 'chrome') &&\n    6              window.navigator.vendor !== 'Google Inc.' && !_.has(window.navigator, 'mozId')) {\n    .\n   74          });\n   75  \n   76:         transitionHelper.updateMembers(null, teamMembers);\n   77      };\n   78  });\n\nC:\\git\\Galileo-Web\\app\\pages\\project\\project.ctrl.js:\n   75  				$scope.reloadData();\n   76  \n   77: 				$scope.canAddTeamMembers = true;\n   78  \n   79  				$translate('PROJECT_ALL_DATA', { project: project.name }).then(function(title) {\n\nC:\\git\\Galileo-Web\\app\\providers\\transition_helper.srv.js:\n    7          .module(settings.moduleName, [])\n    8          .service('transitionHelper', function($rootScope, $timeout) {\n    9:             function teamMembersChanged(members) {\n   10:                 if(!$rootScope.teamMembers) {\n   11                      return true;\n   12                  }\n   13:                 if($rootScope.teamMembers.length !== members.length) {\n   14                      return true;\n   15                  }\n   16:                 return !_.all($rootScope.teamMembers, function(member, index) {\n   17                      return member.displayName === members[index].displayName;\n   18                  });\n   ..\n   27              this.updateMembers = function (projectId, members) {\n   28                  $rootScope.projectId = projectId;\n   29:                 if(!teamMembersChanged(members)) {\n   30                      return;\n   31                  }\n   32                  var delay = 0;\n   33:                 if ($rootScope.teamMembers) {\n   34:                     delay = ($rootScope.teamMembers.length) * 200;\n   35                  }\n   36:                 $rootScope.teamMembers = [];\n   37                  $timeout(function() {\n   38:                     $rootScope.teamMembers = members;\n   39                  }, delay);\n   40              };\n\nUnable to open C:\\git\\Galileo-Web\\node_modules\\grunt-contrib-jasmine\\node_modules\\grunt-lib-phantomjs\\node_modules\\phantomjs\\node_modules\\request\\node_modules\\form-data\\node_modules\\combined-stream\\node_modules\\delayed-stream\\test\\integration\\test-delayed-stream-auto-pause.js\nC:\\git\\Galileo-Web\\spec\\unit\\directives\\invite_to_project.dir.spec.js:\n   34  		this.$rootScope.isOwner = true;\n   35  		this.$rootScope.projectOwner = '111';\n   36: 		this.$rootScope.teamMembers = [];\n   37  \n   38  		this.scope.successSpy = this.successSpy;\n\nC:\\git\\Galileo-Web\\spec\\unit\\directives\\team_stack.dir.spec.js:\n   13  	beforeEach(function () {\n   14  		this.modal.calls.reset();\n   15: 		this.$rootScope.teamMembers = [\n   16  			{displayName: 'Mickey Mouse', timeZone: 'US/Eastern'},\n   17  			{displayName: 'Foo Bar', timeZone: 'US/Los_Angeles'},\n\nC:\\git\\Galileo-Web\\spec\\unit\\providers\\transition_helper.srv.spec.js:\n   23  			var self = this;\n   24  			this.$timeout.and.callFake(function (fn, timeout) {\n   25: 				expect(self.$rootScope.teamMembers).toEqual([]);\n   26  				expect(timeout).toBe(600);\n   27  				fn();\n   28  			});\n   29  \n   30: 			this.$rootScope.teamMembers = [{displayName: \"a\"}, {displayName: \"b\"}, {displayName: \"c\"}];\n   31  			this.transitionHelper.updateMembers('PROJECT_ID', [{displayName: \"d\"}, {displayName: \"e\"}]);\n   32: 			expect(this.$rootScope.teamMembers).toEqual([{displayName: \"d\"}, {displayName: \"e\"}]);\n   33  		});\n   34  \n   35  		it(\"should not animate the team stack away and back if the members did not change (even if other information in object changes)\", function(){\n   36: 			this.$rootScope.teamMembers = [{displayName: \"a\"}, {displayName: \"b\"}, {displayName: \"c\"}];\n   37  			this.transitionHelper.updateMembers('PROJECT_ID', [{displayName: \"a\", foo: \"bar\"}, {displayName: \"b\"}, {displayName: \"c\"}]);\n   38  			expect(this.$timeout).not.toHaveBeenCalled();\n   39: 			expect(this.$rootScope.teamMembers).toEqual([{displayName: \"a\"}, {displayName: \"b\"}, {displayName: \"c\"}]);\n   40  		});\n   41  \n\nC:\\git\\Galileo-Web\\temp\\app\\build\\templates.js:\n 1648      \"<ul>\\r\" +\n 1649      \"\\n\" +\n 1650:     \"\\t<li ng-repeat=\\\"member in teamMembers\\\">\\r\" +\n 1651      \"\\n\" +\n 1652      \"\\t\\t<tooltip class=\\\"left\\\">\\r\" +\n\nC:\\git\\Galileo-Web\\temp\\app\\pages\\all_projects\\all_projects.ctrl.js:\n    5  			resolve: {\n    6  				pageOne: ['projects', function(projects) { return projects.list({ queryParams: { count: 100 } });}],\n    7: 				teamMembers: ['members', function(members) { return members.getAll(); }]\n    8  \n    9  			},\n   10  			templateUrl: 'pages/all_projects/all_projects',\n   11: 			controller: ['$scope', 'modal', 'pageOne', 'projects', '$rootScope', '$translate', 'teamMembers', '$sce', 'transitionHelper', '$timeout', function($scope, modal, pageOne, projects, $rootScope, $translate, teamMembers, $sce, transitionHelper, $timeout) {\n   12  				if (!localStorage.getItem('revisit') && !_.has(window, 'chrome') &&\n   13  					window.navigator.vendor !== 'Google Inc.' && !_.has(window.navigator, 'mozId')) {\n   ..\n   61  				});\n   62  \n   63: 				transitionHelper.updateMembers(null, teamMembers);\n   64  			}]\n   65  		});\n\nC:\\git\\Galileo-Web\\temp\\app\\pages\\project\\project.ctrl.js:\n   75  				$scope.reloadData();\n   76  \n   77: 				$scope.canAddTeamMembers = true;\n   78  \n   79  				$translate('PROJECT_ALL_DATA', { project: project.name }).then(function(title) {\n\nC:\\git\\Galileo-Web\\temp\\app\\providers\\transition_helper.srv.js:\n    3  	.module('autodesk360')\n    4  	.service('transitionHelper', ['$rootScope', '$timeout', function($rootScope, $timeout) {\n    5: 		function teamMembersChanged(members) {\n    6: 			if(!$rootScope.teamMembers) {\n    7  				return true;\n    8  			}\n    9: 			if($rootScope.teamMembers.length !== members.length) {\n   10  				return true;\n   11  			}\n   12: 			return !_.all($rootScope.teamMembers, function(member, index) {\n   13  				return member.displayName === members[index].displayName;\n   14  			});\n   ..\n   23  		this.updateMembers = function (projectId, members) {\n   24  			$rootScope.projectId = projectId;\n   25: 			if(!teamMembersChanged(members)) {\n   26  				return;\n   27  			}\n   28  			var delay = 0;\n   29: 			if ($rootScope.teamMembers) {\n   30: 				delay = ($rootScope.teamMembers.length) * 200;\n   31  			}\n   32: 			$rootScope.teamMembers = [];\n   33  			$timeout(function() {\n   34: 				$rootScope.teamMembers = members;\n   35  			}, delay);\n   36  		};\n\n37 matches across 13 files\n",
+					"settings":
+					{
+						"buffer_size": 7517,
+						"line_ending": "Windows",
+						"name": "Find Results",
+						"scratch": true
+					}
+				},
+				{
+					"file": "/C/git/Galileo-Web/app/directives/team_stack/team_stack.html",
+					"settings":
+					{
+						"buffer_size": 401,
+						"line_ending": "Windows"
+					}
+				},
+				{
+					"file": "/C/git/Galileo-Web/app/providers/api/members.srv.js",
+					"settings":
+					{
+						"buffer_size": 3936,
+						"line_ending": "Windows"
+					}
+				},
+				{
+					"file": "/C/git/Galileo-Web/app/a360.cfg.js",
+					"settings":
+					{
+						"buffer_size": 1490,
+						"line_ending": "Windows"
+					}
+				},
+				{
+					"file": "/C/git/Galileo-Web/grunt-tasks/connect.js",
+					"settings":
+					{
+						"buffer_size": 1042,
+						"line_ending": "Windows"
+					}
+				},
+				{
+					"file": "/C/git/Galileo-Web/grunt-tasks/server.js",
+					"settings":
+					{
+						"buffer_size": 241,
+						"line_ending": "Windows"
+					}
+				},
+				{
+					"file": "/C/git/Galileo-Web/app/directives/user_avatar/user_avatar.dir.js",
+					"settings":
+					{
+						"buffer_size": 463,
+						"line_ending": "Windows"
+					}
+				},
+				{
+					"file": "/C/git/Galileo-Web/app/pages/all_projects/all_projects.deps.js",
+					"settings":
+					{
+						"buffer_size": 595,
+						"line_ending": "Windows"
+					}
+				},
+				{
+					"file": "/C/git/Galileo-Web/README.md",
+					"settings":
+					{
+						"buffer_size": 1884,
+						"line_ending": "Windows"
+					}
+				},
+				{
+					"file": "/C/git/Galileo-Web/app/pages/project/project.ctrl.js",
+					"settings":
+					{
+						"buffer_size": 3060,
+						"line_ending": "Windows"
+					}
+				},
+				{
+					"file": "/C/git/Galileo-Web/grunt-tasks/eslint.js",
+					"settings":
+					{
+						"buffer_size": 135,
+						"line_ending": "Windows"
+					}
+				},
+				{
+					"file": "/C/git/Galileo-Web/grunt-tasks/build.js",
+					"settings":
+					{
+						"buffer_size": 449,
+						"line_ending": "Windows"
+					}
+				},
+				{
+					"contents": "Sample Markdown Cheat Sheet\n=========================== \n\nThis is a sample markdown file to help you write Markdown quickly :)\n\nIf you use the fabulous [Sublime Text 2/3 editor][ST] along with the [Markdown Preview plugin][MarkdownPreview], open your ST2 Palette with `CMD+⇧+P` then choose `Markdown Preview in browser` to see the result in your browser.\n\n## Text basics\nthis is *italic* and this is **bold** .  another _italic_ and another __bold__\n\nthis is `important` text. and percentage signs : % and `%`\n\nThis is a paragraph with a footnote (builtin parser only). [^note-id]\n\nInsert `[ TOC ]` without spaces to generate a table of contents (builtin parsers only).\n\n## Indentation\n> Here is some indented text\n>> even more indented\n\n## Titles\n# Big title (h1)\n## Middle title (h2)\n### Smaller title (h3)\n#### and so on (hX)\n##### and so on (hX)\n###### and so on (hX)\n\n## Example lists (1)\n\n - bullets can be `-`, `+`, or `*`\n - bullet list 1\n - bullet list 2\n    - sub item 1\n    - sub item 2\n\n        with indented text inside\n\n - bullet list 3\n + bullet list 4\n * bullet list 5\n\n## Links\n\nThis is an [example inline link](http://lmgtfy.com/) and [another one with a title](http://lmgtfy.com/ \"Hello, world\").\n\nLinks can also be reference based : [reference 1][ref1] or [reference 2 with title][ref2].\n\nReferences are usually placed at the bottom of the document\n\n## Images\n\nA sample image :\n\n![revolunet logo](http://www.revolunet.com/static/parisjs8/img/logo-revolunet-carre.jpg \"revolunet logo\")\n\nAs links, images can also use references instead of inline links :\n\n![revolunet logo][revolunet-logo]\n\n\n## Code\n\nIt's quite easy to show code in markdown files.\n\nBackticks can be used to `highlight` some words.\n\nAlso, any indented block is considered a code block.  If `enable_highlight` is `true`, syntax highlighting will be included (for the builtin parser - the github parser does this automatically).\n\n    <script>\n        document.location = 'http://lmgtfy.com/?q=markdown+cheat+sheet';\n    </script>\n\n## Math\n\nWhen `enable_mathjax` is `true`, inline math can be included \\\\(\\frac{\\pi}{2}\\\\) $\\pi$\n\nAlternatively, math can be written on its own line:\n\n$$F(\\omega) = \\frac{1}{\\sqrt{2\\pi}} \\int_{-\\infty}^{\\infty} f(t) \\, e^{ - i \\omega t}dt$$\n\n\\\\[\\int_0^1 f(t) \\mathrm{d}t\\\\]\n\n\\\\[\\sum_j \\gamma_j^2/d_j\\\\]\n\n\n\n## GitHub Flavored Markdown\n\nIf you use the Github parser, you can use some of [Github Flavored Markdown][gfm] syntax :\n\n * User/Project@SHA: revolunet/sublimetext-markdown-preview@7da61badeda468b5019869d11000307e07e07401\n * User/Project#Issue: revolunet/sublimetext-markdown-preview#1\n * User : @revolunet\n\nSome Python code :\n\n```python\nimport random\n\nclass CardGame(object):\n    \"\"\" a sample python class \"\"\"\n    NB_CARDS = 32\n    def __init__(self, cards=5):\n        self.cards = random.sample(range(self.NB_CARDS), 5)\n        print 'ready to play'\n```\n\nSome Javascript code :\n\n```js\nvar config = {\n    duration: 5,\n    comment: 'WTF'\n}\n// callbacks beauty un action\nasync_call('/path/to/api', function(json) {\n    another_call(json, function(result2) {\n        another_another_call(result2, function(result3) {\n            another_another_another_call(result3, function(result4) {\n                alert('And if all went well, i got my result :)');\n            });\n        });\n    });\n})\n```\n\nThe Github Markdown also brings some [nice Emoji support][emoji] : :+1: :heart: :beer:\n\n[^note-id]: This is the text of the note. \n\n## Parsers and Extensions\n\nMarkdown Preview comes with **Python-Markdown** preloaded.\n\n### *Python-Markdown*\n\nThe [Python-Markdown Parser][] provides support for several extensions.\n\n[Python-Markdown Parser]: https://github.com/waylan/Python-Markdown\n\n#### Extra Extensions\n\n* `abbr` -- [Abbreviations][]\n* `attr_list` -- [Attribute Lists][]\n* `def_list` -- [Definition Lists][]\n* `fenced_code` -- [Fenced Code Blocks][]\n* `footnotes` -- [Footnotes][]\n* `tables` -- [Tables][]\n* `smart_strong` -- [Smart Strong][]\n\n[Abbreviations]: http://pythonhosted.org/Markdown/extensions/abbreviations.html\n[Attribute Lists]: http://pythonhosted.org/Markdown/extensions/attr_list.html\n[Definition Lists]: http://pythonhosted.org/Markdown/extensions/definition_lists.html\n[Fenced Code Blocks]: http://pythonhosted.org/Markdown/extensions/fenced_code_blocks.html\n[Footnotes]: http://pythonhosted.org/Markdown/extensions/footnotes.html\n[Tables]: http://pythonhosted.org/Markdown/extensions/tables.html\n[Smart Strong]: http://pythonhosted.org/Markdown/extensions/smart_strong.html\n\n\nYou can enable them all at once using the `extra` keyword.\n\n    extensions: [ 'extra' ]\n\nIf you want all the extras plus the `toc` extension,\nyour settings would look like this:\n\n    {\n        ...\n        parser: 'markdown',\n        extensions: ['extra', 'toc'],\n        ...\n    }\n\n\n#### Other Extensions\n\nThere are also some extensions that are not included in Markdown Extra\nbut come in the standard Python-Markdown library.\n\n* `code-hilite` -- [CodeHilite][]\n* `html-tidy` -- [HTML Tidy][]\n* `header-id` -- [HeaderId][]\n* `meta_data` -- [Meta-Data][]\n* `nl2br` -- [New Line to Break][]\n* `rss` -- [RSS][]\n* `sane_lists` -- [Sane Lists][]\n* `smarty` -- [Smarty][]\n* `toc` -- [Table of Contents][]\n* `wikilinks` -- [WikiLinks][]\n\n[CodeHilite]:  http://pythonhosted.org/Markdown/extensions/code_hilite.html\n[HTML Tidy]:  http://pythonhosted.org/Markdown/extensions/html_tidy.html\n[HeaderId]:  http://pythonhosted.org/Markdown/extensions/header_id.html\n[Meta-Data]:  http://pythonhosted.org/Markdown/extensions/meta_data.html\n[New Line to Break]:  http://pythonhosted.org/Markdown/extensions/nl2br.html\n[RSS]:  http://pythonhosted.org/Markdown/extensions/rss.html\n[Sane Lists]:  http://pythonhosted.org/Markdown/extensions/sane_lists.html\n[Table of Contents]:  http://pythonhosted.org/Markdown/extensions/toc.html\n[WikiLinks]:  http://pythonhosted.org/Markdown/extensions/wikilinks.html\n[Smarty]: https://pythonhosted.org/Markdown/extensions/smarty.html\n\n#### 3rd Party Extensions\n\n*Python-Markdown* is designed to be extended.\n\nSome included ones are:\n\n* `delete` -- github style delte support via `~~word~~`\n* `githubemoji` --  github emoji support\n* `tasklist` -- github style tasklists\n* `magiclink` -- github style auto link conversion of http|ftp links\n* `headeranchor` -- github style header anchor links\n* `github` -- Adds the above extensions in one shot\n* `b64` -- convert and embed local images to base64.  Setup by adding this `b64(base_path=${BASE_PATH})`\n\nThere are also a number of others available:\n\nJust fork this repo and add your extensions inside the `.../Packages/Markdown Preview/markdown/extensions/` folder.\n\nCheck out the list of [3rd Party extensions](\nhttps://github.com/waylan/Python-Markdown/wiki/Third-Party-Extensions).\n\n\n#### Default Extensions\n\nThe default extensions are:\n\n* `footnotes` -- [Footnotes]\n* `toc` -- [Table of Contents]\n* `fenced_code` -- [Fenced Code Blocks] \n* `tables` -- [Tables]\n\nUse the `default` keyword, to select them all.\nIf you want all the defaults plus the `definition_lists` extension,\nyour settings would look like this:\n\n    {\n        ...\n        parser: 'markdown',\n        extensions: ['default', 'definition_lists'],\n        ...\n    }\n\n## Examples\n\n### Tables\n\nThe `tables` extension of the *Python-Markdown* parser is activated by default,\nbut is currently **not** available in *Markdown2*.\n\nThe syntax was adopted from the [php markdown project](http://michelf.ca/projects/php-markdown/extra/#table),\nand is also used in github flavoured markdown.\n\n| Year | Temperature (low) | Temperature (high) |  \n| ---- | ----------------- | -------------------|  \n| 1900 |               -10 |                 25 |  \n| 1910 |               -15 |                 30 |  \n| 1920 |               -10 |                 32 |  \n\n\n### Wiki Tables\n\nIf you are using *Markdown2* with the `wiki-tables` extra activated you should see a table below:\n\n|| *Year* || *Temperature (low)* || *Temperature (high)* ||  \n||   1900 ||                 -10 ||                   25 ||  \n||   1910 ||                 -15 ||                   30 ||  \n||   1920 ||                 -10 ||                   32 ||  \n\n\n### Definition Lists\n\nThis example requires *Python Markdown*'s `def_list` extension.\n\nApple\n:   Pomaceous fruit of plants of the genus Malus in \n    the family Rosaceae.\n\nOrange\n:   The fruit of an evergreen tree of the genus Citrus.\n\n\n## About\n\nThis plugin and this sample file is proudly brought to you by the [revolunet team][revolunet]\n\n [ref1]: http://revolunet.com\n [ref2]: http://revolunet.com \"rich web apps\"\n [MarkdownREF]: http://daringfireball.net/projects/markdown/basics\n [MarkdownPreview]: https://github.com/revolunet/sublimetext-markdown-preview\n [ST]: http://sublimetext.com\n [revolunet]: http://revolunet.com\n [revolunet-logo]: http://www.revolunet.com/static/parisjs8/img/logo-revolunet-carre.jpg \"revolunet logo\"\n [gfm]: http://github.github.com/github-flavored-markdown/\n [emoji]: http://www.emoji-cheat-sheet.com/\n\n",
+					"settings":
+					{
+						"buffer_size": 8996,
+						"line_ending": "Windows",
+						"name": "Markdown Cheatsheet",
+						"scratch": true
+					}
+				},
+				{
+					"contents": "Package Control Messages\n========================\n\nMarkdown Preview:\n----------------\n\n  Sublime Text 2/3 Markdown Preview\n  =================================\n  \n  Preview and build your markdown files quickly in your web browser from sublime text 2/3. \n  \n  You can use builtin [python-markdown][10] parser or use the [github markdown API][5] for the conversion.\n  \n  **NOTE:** If you choose the GitHub API for conversion (set parser: github in your settings), your code will be sent through https to github for live conversion. You'll have [Github flavored markdown][6], syntax highlighting and EMOJI support for free :heart: :octocat: :gift:. If you make more than 60 calls a day, be sure to set your GitHub API key in the settings :). You can also get most of this in the default Markdown parser with by enabling certain extensions; see \"[Parsing Github Flavored Markdown](#parsing-github-flavored-markdown)\"\" below for more information.\n  \n  **LINUX users:** If you want to use GitHub API for conversion, you'll need to have a custom Python install that includes python-ssl as its not built in the Sublime Text 2 Linux package. see [@dusteye comment][8]. If you use a custom window manager, also be sure to set a `BROWSER` environment variable. see [@PPvG comments][9]\n  \n  ## Features :\n  \n   - Markdown preview using the [Python-markdown][10] or the Github API just choose select the build commands.\n   - Syntax highlighting via Pygments. See \"[Configuring Pygments](#configuring-pygments)\" for more info.\n   - Build markdown file using Sublime Text build system. The build parser are config via the `\"parser\"` config.\n   - Browser preview auto reload on save if you have the [ST2 LiveReload plugin][7] installed.\n   - Builtin parser : supports `abbr`, `attr_list`, `def_list`, `fenced_code`, `footnotes`, `tables`, `smart_strong`, `smarty`,  `wikilinks`, `meta`, `sane_lists`, `codehilite`, `nl2br`, and `toc` markdown extensions.\n   - CSS search path for local and build-in CSS files (always enabled) and/or CSS overriding if you need\n   - YAML support thanks to @tommi\n   - Clipboard selection and copy to clipboard thanks to @hexatrope\n   - MathJax support : \\\\(\\frac{\\pi}{2}\\\\) thanks to @bps10\n   - HTML template customisation thanks to @hozaka\n   - Embed images as base64 (see [settings][settings] file for more info)\n   - Strip out multimarkdown critic marks (see [settings][settings] file for more info)\n   - 3rd party extensions for the Python Markdown parser:\n   	- **magiclink**: Automatic conversion of http or ftp links to html links.\n   	- **delete**: Surround inline text with `~~crossed out~~` to get del tags ~~crossed out~~.\n      - **insert**: Surround inline text with `^^underlined^^` to get ins tags <ins>underlined</ins>\n   	- **tasklist**: Support for github like tasklists using the following notation: `- [X] Completed Task`.\n   	- **githubemoji**: Support for github emojis (`:smile:` --> :smile:). Converts to HTML images that use github's actual emoji assets.\n   	- **b64**: Convert and embed images in the HTML as base64 by adding the extension as `b64(base_path=${BASE_PATH})` (recently a global b64 that works on all parsers was added; see [settings][settings] file for more info).\n   	- **headeranchor**: Adds support for github style anchor links preceding headers.\n   	- **github**: A convenience extension to add: `magiclink`, `delete`, `tasklist`, `githubemoji`, `headeranchor`, and `nl2br` to parse and display GFM in a github-ish way.  It is recommed to pair `github` with `extra` and `codehilite` (with language guessing off) to parse close to github's way.\n      - **admonitionicon**: Add font icon to admonition blocks.  Default CSS uses [font awesome](http://fortawesome.github.io/Font-Awesome/)\n      - **progressbar**: Create progress bars.  See [Using Progress Bars](#using-progress-bars) for more info.\n  \n  ## Installation :\n  \n  ### Using [Package Control][3] (*Recommended*)\n  \n  For all Sublime Text 2/3 users we recommend install via [Package Control][3].\n  \n  1. [Install][11] Package Control if you haven't yet.\n  2. Use `cmd+shift+P` then `Package Control: Install Package`\n  3. Look for `Markdown Preview` and install it.\n  \n  ### Manual Install\n  \n  1. Click the `Preferences > Browse Packages…` menu\n  2. Browse up a folder and then into the `Installed Packages/` folder\n  3. Download [zip package][12] rename it to `Markdown Preview.sublime-package` and copy it into the `Installed Packages/` directory\n  4. Restart Sublime Text\n  \n  ## Usage :\n  \n  ### To preview :\n  \n   - optionally select some of your markdown for conversion\n   - use `cmd+shift+P` then `Markdown Preview` to show the follow commands (you will be prompted to select which parser you prefer):\n  	- Markdown Preview: Preview in Browser\n  	- Markdown Preview: Export HTML in Sublime Text\n  	- Markdown Preview: Copy to Clipboard\n  	- Markdown Preview: Open Markdown Cheat sheet\n   - or bind some key in your user key binding, using a line like this one:\n     `{ \"keys\": [\"alt+m\"], \"command\": \"markdown_preview\", \"args\": {\"target\": \"browser\", \"parser\":\"markdown\"} },` for a specific parser and target or `{ \"keys\": [\"alt+m\"], \"command\": \"markdown_preview_select\", \"args\": {\"target\": \"browser\"} },` to bring up the quick panel to select enabled parsers for a given target.\n   - once converted a first time, the output HTML will be updated on each file save (with LiveReload plugin)\n  \n  ### To build :\n  \n   - Just use `Ctrl+B` (Windows/Linux) or `cmd+B` (Mac) to build current file.\n  \n  ### To config :\n  \n  Using Sublime Text menu: `Preferences`->`Package Settings`->`Markdown Preview`\n  \n  - `Settings - User` is where you change your settings for Markdown Preview.\n  - `Settings - Default` is a good reference with detailed descriptions for each setting.\n  \n  ### Configuring Pygments\n  If you add the codehilite extension manually in the enabled extensions, you can override some of the default settings.\n  \n  * Turn language guessing *on* or *off* (*on* will highlight fenced blocks even if you don't specify a language)  `codehilite(guess_lang=False)` (True|False).\n  * Show line numbers: `codehilite(linenums=True)` (True|False).\n  * Change the higlight theme: `codehilite(pygments_style=emacs)`.\n  * Inline the CSS: `codehilite(noclasses=True)` (True|False).\n  \n  See [codehilte page](https://pythonhosted.org/Markdown/extensions/code_hilite.html) for more info.\n  \n  ### Meta Data Support\n  When the `meta` extension is enabled (https://pythonhosted.org/Markdown/extensions/meta_data.html), the results will be written to the HTML head in the form `<meta name=\"key\" content=\"value1,value2\">`.  `title` is the one exception, and its content will be written to the title tag in the HTML head.\n  \n  ### YAML Frontmatter Support\n  YAML frontmatter can be stripped out and read when `strip_yaml_front_matter` is set to  `true` in the settings file.  In general the, the fronmatter is handled the same as [meta data](#meta-data-support), but if both exist in a file, the YAML keys will override the `meta` extension keys.  There are a few special keys names that won't be handled as html meta data.\n  \n  #### Special YAML Key Names\n  Yaml frontmatter has a few special key names that are used that will not be handled as meta data:\n  \n  - **basepath**: An absolute path to configure the relative paths for images etc. (for when the markdown is supposed to reference images in a different location.)\n  - **references**: Can take a file path or an array of file paths for separate markdown files containing references, footnotes, etc.  Can be an absolute path or relative path.  Relative paths first use the source file's directory, and if the file cannot be found, it will use the `basepath` setting.\n  - **destination**: This is an absolute file path or relative file path for when the markdown is saved to html via the build command or the `Save to HTML` command.  Relative paths first use the source file's directory, and if the file cannot be found, it will use the `basepath` setting.\n  - **settings**: This is a dictionary where you can override settings that are in the settings file.\n  \n  #### Example\n  ```yaml\n  ---\n      # Builtin values\n      references:\n          - references.md\n          - abbreviations.md\n          - footnotes.md\n  \n      destination: destination.html\n  \n      # Meta Data\n      title: Test Page\n      author:\n          - John Doe\n          - Jane Doe\n  \n      # Settings overrides\n      settings:\n          enabled_extensions:\n          - extra\n          - github\n          - toc\n          - headerid\n          - smarty(smart_quotes=False) # smart quotes interferes with attr_list\n          - meta\n          - wikilinks\n          - admonition\n          - codehilite(guess_lang=False,pygments_style=github)\n  ---\n  ```\n  \n  ### Using Progress Bars\n  Create a progress bar with the following notations:\n  \n  - Percentage: `[== 35% optional label]`\n  - Division: `[== 37.5/500 optional label]`\n  \n  Though progress bars will be recognized inline, they should be displayed as block; they should be used as block items except were not possible (tables etc.).  In general it is best to have an empty line before and after a progress bar.\n  \n  ```\n  Some text\n  \n  [== 25% progress bar]\n  \n  Some more text\n  ```\n  \n  Default styling is a flat candy-striped  bar, but there is included CSS for animated candy-stripping and a glossy bar.  You can access one or more of these additional stylings by adding the classes when enabling the extension `progressbar(addclasses=candystripe-animate gloss)`.\n  \n  Also by default, the progress bar extension adds classes to allow for different stylings of percent levels: 0-20%, 21-40%, 41-60%, 61-80%, 80-99%, 100%.  This can be turned off by defining the extension as `progressbar(levelclass=False)`.  When level classes are disabled, the default color is blue.\n  \n  Additionally, you can change the settings with this inline notation as well `[==50%  MyLabel]{addclasses=\"additional classes\" levelclass=\"false\"}`.\n  \n  ### Parsing Github Flavored Markdown :\n  Github Flavored Mardown (GFM) is a very popular markdown.  Markdown Preview can actually handle them in a couple of ways: online and offline.\n  \n  #### Online :\n  Parsing GFM using the online method requires using the Github API as the parser.  It may also require setting `github_mode` to `gfm` to get things like tasklists to render properly.\n  \n  #### Offline :\n  By default almost all extensions are enabled to help with the github feel, but there are some tweaks needed to get the full experience.\n  \n  GFM does not auto guess language in fenced blocks, but Markdown Preview does this by default.  You can fix this in one of two ways:\n  \n  1. Disable auto language guessing in the settings file `\"guess_language\": false,`\n  2. Or if you are manually defining extensions: `\"enabled_extensions\": [\"codehilite(guess_lang=False,pygments_style=github)\"]`\n  \n  \n  As mentioned earlier, almost all extensions are enabled by default, but as a reference, the minimum extensions that should be enabled are listed below:\n  \n  ```javascript\n  	\"enabled_extensions\": [\n  		\"extra\",\n  		\"github\",\n  		\"codehilite(guess_lang=False,pygments_style=github)\"\n  	]\n  ```\n  \n  This may be further enhanced in the future.\n  \n  \n  ## Support :\n  \n  - Any bugs about Markdown Preview please feel free to report [here][issue].\n  - And you are welcome to fork and submit pullrequests.\n  \n  \n  ## License :\n  \n  The code is available at github [project][home] under [MIT licence][4].\n  \n   [home]: https://github.com/revolunet/sublimetext-markdown-preview\n   [3]: https://sublime.wbond.net/\n   [4]: http://revolunet.mit-license.org\n   [5]: http://developer.github.com/v3/markdown\n   [6]: http://github.github.com/github-flavored-markdown/\n   [7]: https://github.com/dz0ny/LiveReload-sublimetext2\n   [8]: https://github.com/revolunet/sublimetext-markdown-preview/issues/27#issuecomment-11772098\n   [9]: https://github.com/revolunet/sublimetext-markdown-preview/issues/78#issuecomment-15644727\n   [10]: https://github.com/waylan/Python-Markdown\n   [11]: https://sublime.wbond.net/installation\n   [12]: https://github.com/revolunet/sublimetext-markdown-preview/archive/master.zip\n   [issue]: https://github.com/revolunet/sublimetext-markdown-preview/issues\n   [settings]: https://github.com/revolunet/sublimetext-markdown-preview/blob/master/MarkdownPreview.sublime-settings\n  \n\n\nMarkdownEditing:\n---------------\n\n  # MarkdownEditing\n  \n  Markdown plugin for Sublime Text. Provides a decent Markdown color scheme (light and dark) with more __robust__ syntax highlighting and useful Markdown editing features for Sublime Text. 3 flavors are supported: Standard Markdown, __GitHub flavored Markdown__, MultiMarkdown.\n  \n  ![MarkdownEditing][github]\n  \n  [Dark][github 2] and [yellow][github 3] theme available.\n  \n  > Your kind donations will help [me](https://github.com/maliayas) pause my daily job and put more serious effort into the development of this plugin for the next 2 milestones ([2.0.5](https://github.com/SublimeText-Markdown/MarkdownEditing/issues?milestone=1&state=open) and [2.2.0](https://github.com/SublimeText-Markdown/MarkdownEditing/issues?milestone=2&state=open)). When they are completed, donation button will be removed. Thanks.\n  > \n  > <a href=\"https://www.paypal.com/cgi-bin/webscr?cmd=_donations&amp;business=W2NXRPD43YSCU&amp;lc=TR&amp;item_name=Ali%20Ayas&amp;item_number=Open%20Source&amp;currency_code=USD&amp;bn=PP%2dDonationsBF%3abtn_donate_SM%2egif%3aNonHosted\"><img src=\"https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif\" alt=\"[paypal]\" /></a>\n  \n  ## Overview\n  \n  * [Features](#features)\n  * [Key Bindings](#key-bindings)\n  * [GFM Specific Features](#gfm-specific-features)\n  * [Commands for Command Palette](#commands-for-command-palette)\n  * [Installation](#installation)\n  * [Configuration](#configuration)\n  * [Tips](#tips)\n  * [Similar Plugins](#similar-plugins)\n  * [Known Bugs](#known-bugs)\n  * [Contributing](#contributing)\n  * [Credits](#credits)\n  * [License](#license)\n  \n  ## Features\n  \n  * Asterisks and underscores are autopaired and will wrap selected text\n      - If you start an empty pair and hit backspace, both elements are deleted\n      - If you start an empty pair and hit space, the right element is deleted\n  * Backticks are paired\n  * At the end of a list item, pressing <kbd>Enter</kbd> will automatically insert the new list item bullet.\n      - Pressing <kbd>Tab</kbd> on the blank list item will indent it and switch the list bullet to another one (Order is `*`, `-`, `+` in a cycle).\n      - Pressing <kbd>Shift</kbd> <kbd>Tab</kbd> on the blank list item will unindent it in the same way as above.\n      - Sequential <kbd>Tab</kbd> s or <kbd>Shift</kbd> <kbd>Tab</kbd> s are supported.\n      - You can disable automatic bullet switching or choose which bullets to be used, in your settings file.\n      - If a list item contains a [GFM task][GFM], pressing <kbd>Enter</kbd> at the end of the line will continue with a new blank task.\n  * At the end of a blockquote line, pressing <kbd>Enter</kbd> will automatically extend blockquote.\n  * Selecting some text and pressing <kbd>&gt;</kbd> will convert it to blockquote. The first and the last line don't have to be fully selected; partial select works, too.\n  * Left bracket pairing is modified to eliminate the selection and leave the cursor at a point where you can insert a `[]` or `()` pair for a link\n  * Displays Markdown headers in the Project Symbol List (<kbd>Ctrl</kbd> <kbd>Shift</kbd> <kbd>R</kbd>). They will start with `#`, so you will know they belong to markdown files at a glance. Also they will be on top of the list because of the presedence of `#`.\n  * <kbd>~</kbd> wraps selected text with `~~` (strikethrough).\n  * Typing `#` when there's a selection will surround it with `#` to make it a headline. Multiple presses add additional hashes, increasing the level of the header. Once you hit 6 hashes, it will reset to 0 on the next press. The `mde.match_header_hashes` will determine if the `#` are mirrored on both sides or just at the beginning of the line.\n  * Typing return at the end of a line that begins with hashmarks will insert closing hashmarks on the headline. They're not required for Markdown, it's just aesthetics, and you can change the `mde.match_header_hashes` option in your settings to disable.\n  * Setext-style headers can be completed with `Tab`. That is, typing `Tab` on a line containing only `=` or `-` characters will add or remove enough characters to it to match the length of the line above.\n  \n  ## Key Bindings\n  \n  | OS X | Windows/Linux | Description |\n  |------|---------------|-------------|\n  | <kbd>⌘</kbd><kbd>⌥</kbd><kbd>V</kbd> | <kbd>Ctrl</kbd><kbd>Win</kbd><kbd>V</kbd> | Pastes the contents of the clipboard as an inline link on selected text.\n  | <kbd>⌘</kbd><kbd>⌥</kbd><kbd>R</kbd> | <kbd>Ctrl</kbd><kbd>Win</kbd><kbd>R</kbd> | Pastes the contents of the clipboard as a reference link.\n  | <kbd>⌘</kbd><kbd>⌥</kbd><kbd>K</kbd> | <kbd>Ctrl</kbd><kbd>Win</kbd><kbd>K</kbd> | Inserts a standard inline link.\n  | <kbd>⌘</kbd><kbd>⇧</kbd><kbd>K</kbd> | <kbd>Shift</kbd><kbd>Win</kbd><kbd>K</kbd> | Inserts an inline image.\n  | <kbd>⌘</kbd><kbd>⌥</kbd><kbd>B</kbd> <kbd>⌘</kbd><kbd>⌥</kbd><kbd>I</kbd> | <kbd>Ctrl</kbd><kbd>Shift</kbd><kbd>B</kbd> <kbd>Ctrl</kbd><kbd>Shift</kbd><kbd>I</kbd> | These are bound to bold and italic. They work both with and without selections. If there is no selection, they will just transform the word under the cursor. These keybindings will unbold/unitalicize selection if it is already bold/italic.\n  | <kbd>⌘</kbd><kbd>^</kbd><kbd>1...6</kbd> | <kbd>Ctrl</kbd><kbd>1...6</kbd> | These will add the corresponding number of hashmarks for headlines. Works on blank lines and selected text in tandem with the above headline tools. If you select an entire existing headline, the current hashmarks will be removed and replaced with the header level you requested. This command respects the `mde.match_header_hashes` preference setting.\n  | <kbd>⌘</kbd><kbd>⇧</kbd><kbd>6</kbd> | <kbd>Ctrl</kbd><kbd>⇧</kbd><kbd>6</kbd> | Inserts a footnote and jump to its definition. If your cursor is in a definition, it will jump back to the marker.\n  | <kbd>⌥</kbd><kbd>⇧</kbd><kbd>F</kbd> | <kbd>Alt</kbd><kbd>Shift</kbd><kbd>F</kbd> | Locates footnote markers without definitions and inserts their markers for the definition.\n  | <kbd>⌥</kbd><kbd>⇧</kbd><kbd>G</kbd> | <kbd>Alt</kbd><kbd>Shift</kbd><kbd>G</kbd> | Locates link references without definitions and inserts their labels at the bottom for the definition.\n  \n  ## GFM Specific Features\n  \n  Underscores in words doesn't mess with bold or italic style:\n  \n  ![underscore-in-words][github 5]\n  \n  Fenced code blocks gets syntax highlighting inside:\n  \n  ![fenced-code-block][github 6]\n  \n  Keyboard shortcuts gets highlighted like in GitHub:\n  \n  ![keyboard-shortcut][github 7]\n  \n  Strikethrough is supported:\n  \n  ![strikethrough][github 8]\n  \n  ## Commands for Command Palette\n  \n  ### Fix Underlined Headers\n  \n  Adjusts every setext-style header to add or remove `=` or `-` characters as needed to match the lengths of their header text.\n  \n  ### Convert Underlined Headers to ATX\n  \n  Converts every setext-style header into an ATX style header. If something is selected only the headers in the selections will be converted, otherwise the conversion will be applied to the whole view.\n  \n  ### Add Missing Link Labels\n  \n  Scans document for referenced link usages (`[some link][some_ref]` and `[some link][]`) and checks if they are all defined. If there are undefined link references, command will automatically create their definition snippet at the bottom of the file.\n  \n  ## Installation\n  \n  _Note_: Sublime text has a native tiny package for Markdown. However, when MarkdownEditing is enabled, native package causes some conflicts. For this reason, MarkdownEditing will automatically disable it. Since it doesn't bring anything new over MarkdownEditing, this is not a loss. But remember, when you disable MarkdownEditing, you have to reenable the native one manually (if you want).\n  \n  If you are using Sublime Text 2, you have to disable the native package _manually_. To do that, add `Markdown` to your `ignored_packages` list in ST user settings:\n  \n      \"ignored_packages\": [..., \"Markdown\"],\n  \n  ### [Package Control][wbond]\n  \n  The preferred method of installation is via [Sublime Package Control][wbond].\n  \n  1. [Install Sublime Package Control][wbond 2]\n  2. From inside Sublime Text, open Package Control's Command Pallet: <kbd>CTRL</kbd> <kbd>SHIFT</kbd> <kbd>P</kbd> (Windows, Linux) or <kbd>CMD</kbd> <kbd>SHIFT</kbd> <kbd>P</kbd> on Mac.\n  3. Type `install package` and hit Return. A list of available packages will be displayed.\n  4. Type `MarkdownEditing` and hit Return. The package will be downloaded to the appropriate directory.\n  5. Restart Sublime Text to complete installation. Open a Markdown file and this custom theme. The features listed above should now be available.\n  \n  ### Manual Installation\n  \n  1. Download or clone this repository to a directory `MarkdownEditing` in the Sublime Text Packages directory for your platform:\n      * Mac: `git clone https://github.com/SublimeText-Markdown/MarkdownEditing.git ~/Library/Application\\ Support/Sublime\\ Text\\ 2/Packages/MarkdownEditing`\n      * Windows: `git clone https://github.com/SublimeText-Markdown/MarkdownEditing.git %APPDATA%\\Sublime/ Text/ 2/\\MarkdownEditing`\n      * Linux: `git clone https://github.com/SublimeText-Markdown/MarkdownEditing.git ~/.Sublime\\ Text\\ 2/Packages/MarkdownEditing`\n  2. Restart Sublime Text to complete installation. Open a Markdown file and this custom theme. The features listed above should now be available.\n  \n  ## Configuration\n  \n  The plugin contains 3 different Markdown flavors: Standard Markdown, GitHub flavored Markdown, MultiMarkdown. Default is GitHub flavored Markdown. If you want to set another one as default, open a Markdown file and select your flavor from the menu: `View > Syntax > Open all with current extension as`. You're done.\n  \n  You may want to have a look at the default settings files. They are located at:\n  \n      Packages/MarkdownEditing/Markdown.sublime-settings         [GitHub flavored Markdown]\n      Packages/MarkdownEditing/Markdown (Standard).sublime-settings\n      Packages/MarkdownEditing/MultiMarkdown.sublime-settings\n  \n  If you want to override any of the default settings, you can open the appropriate user settings file using the `Preferences > Package Settings > Markdown Editing` menu. Each flavor has a different settings file.\n  \n  Bold and italic markers are configurable through ST shell variables. You can use `Preferences > Package Settings > Markdown Editing` menu to see the default settings file. In order to override it, copy & paste its content into the user settings file (`Packages/User/Bold and Italic Markers.tmPreferences`) from the menu and make your edits. It is pretty straightforward.\n  \n  In order to activate the dark or the yellow theme, put one of these lines to your user settings file of the flavor (`Packages/User/[flavor].sublime-settings`):\n  \n      \"color_scheme\": \"Packages/MarkdownEditing/MarkdownEditor-Dark.tmTheme\",\n      \"color_scheme\": \"Packages/MarkdownEditing/MarkdownEditor-Yellow.tmTheme\",\n  \n  If you want to go with your already existing theme, you can reenable it with the same method as above. Keep in mind that, that theme may not cover all the parts of the Markdown syntax that this plugin defines.\n  \n  By default, when you install the plugin, files with these extensions will be assigned to Markdown syntax: \"md\", \"txt\", \"mdown\", \"markdown\", \"markdn\". If you want to prevent any of these extensions to be opened as Markdown, follow these steps:\n  \n  1. Click on the language menu at bottom right\n  2. Select \"Open all with current extension as\"\n  3. Choose your preferred syntax for that extension\n  \n  ## Tips\n  \n  We are maintaining a [tips section][tips] in our [Wiki][]. Jump there to learn from others or share your experiences with others.\n  \n  ## Similar Plugins\n  \n  * [Knockdown][]\n  \n       Knockdown offers useful Markdown features and a custom Markdown theme. All of its unique features except its theme are ported to MarkdownEditing and some of them are actually improved further in MarkdownEditing.\n  * [Sublime Markdown Extended][]\n  * [SmartMarkdown][]\n  \n  ## Known Bugs\n  \n  * Setext-style headers (`===` and `---`) do not show up in the symbol list. This is due to a Sublime Text limitation (see [#158][]). However, we are able to put a placeholder to indicate the existence of the header. We encourage you to use Atx-style headers (`#`).\n  \n  ## Contributing\n  \n  See `CONTRIBUTING.md` file.\n  \n  ## Credits\n  \n  MarkdownEditing was originally created by [Brett Terpstra][brettterpstra] and has become a community project with the goal of consolidating the best features from the varied collection of Markdown packages for Sublime Text. Current development is headed up by [Ali Ayas][github 9].\n  \n  Related blog posts from Brett:\n  * http://brettterpstra.com/2012/05/17/markdown-editing-for-sublime-text-2-humble-beginnings/\n  * http://brettterpstra.com/2013/11/23/markdownediting-for-sublime-text-updates/\n  \n  This plugin contains portions of code from [Knockdown][].\n  \n  Footnote commands were submitted by [J. Nicholas Geist][github 4] and originated at [geekabouttown][geekabouttown].\n  \n  ## License\n  \n  MarkdownEditing is released under the [MIT License][opensource].\n  \n  [TableEditor]:                 https://github.com/vkocubinsky/SublimeTableEditor\n  [Knockdown]:                   https://github.com/aziz/knockdown/\n  [Sublime Markdown Extended]:   https://github.com/jonschlinkert/sublime-markdown-extended\n  [SmartMarkdown]:               https://github.com/demon386/SmartMarkdown\n  [Typewriter]:                  https://github.com/alehandrof/Typewriter\n  [OpenUrl]:                     https://github.com/noahcoad/open-url\n  [brettterpstra]: http://brettterpstra.com\n  [geekabouttown]: http://geekabouttown.com/posts/sublime-text-2-markdown-footnote-goodness\n  [github]: https://raw.github.com/SublimeText-Markdown/MarkdownEditing/master/screenshots/light.png\n  [github 2]: https://raw.github.com/SublimeText-Markdown/MarkdownEditing/master/screenshots/dark.png\n  [github 3]: https://raw.github.com/SublimeText-Markdown/MarkdownEditing/master/screenshots/yellow.png\n  [github 4]: https://github.com/jngeist\n  [github 5]: https://raw.github.com/SublimeText-Markdown/MarkdownEditing/master/screenshots/underscore-in-words.png\n  [github 6]: https://raw.github.com/SublimeText-Markdown/MarkdownEditing/master/screenshots/fenced-code-block.png\n  [github 7]: https://raw.github.com/SublimeText-Markdown/MarkdownEditing/master/screenshots/keyboard-shortcut.png\n  [github 8]: https://raw.github.com/SublimeText-Markdown/MarkdownEditing/master/screenshots/strikethrough.png\n  [github 9]: https://github.com/maliayas\n  [opensource]: http://www.opensource.org/licenses/MIT\n  [wbond]: http://wbond.net/sublime_packages/package_control\n  [wbond 2]: http://wbond.net/sublime_packages/package_control/installation\n  [FullScreenStatus]: https://github.com/maliayas/SublimeText_FullScreenStatus\n  [macstories]: http://www.macstories.net/roundups/sublime-text-2-and-markdown-tips-tricks-and-links/\n  [tips]: https://github.com/SublimeText-Markdown/MarkdownEditing/wiki/Tips\n  [Wiki]: https://github.com/SublimeText-Markdown/MarkdownEditing/wiki\n  [GFM]: https://help.github.com/articles/github-flavored-markdown\n  [#158]: https://github.com/SublimeText-Markdown/MarkdownEditing/issues/158\n  \n",
+					"settings":
+					{
+						"buffer_size": 27756,
+						"line_ending": "Windows",
+						"name": "Package Control Messages",
+						"scratch": true
+					}
+				},
+				{
+					"file": "/C/git/Galileo-Web/app/directives/alerts_menu/alerts_menu.dir.js",
+					"settings":
+					{
+						"buffer_size": 465,
+						"line_ending": "Windows"
+					}
+				},
+				{
+					"file": "/C/git/Galileo-Web/app/pages/all_projects/all_projects.cfg.js",
+					"settings":
+					{
+						"buffer_size": 909,
+						"line_ending": "Windows"
+					}
+				},
+				{
+					"file": "/C/git/Galileo-Web/app/config/requireConfig.tmpl.js",
+					"settings":
+					{
+						"buffer_size": 1407,
+						"line_ending": "Windows"
+					}
+				}
+			],
+			"build_system": "",
+			"command_palette":
+			{
+				"height": 375.0,
+				"selected_items":
+				[
+					[
+						"insta",
+						"Package Control: Install Package"
+					],
+					[
+						"ins",
+						"Package Control: Install Package"
+					],
+					[
+						"mark",
+						"Markdown Preview: Preview in Browser"
+					],
+					[
+						"mar",
+						"Markdown Preview: Preview in Browser"
+					],
+					[
+						"remove",
+						"Package Control: Remove Package"
+					],
+					[
+						"newfi",
+						"ANF: New File"
+					],
+					[
+						"tidy",
+						"Tidy Tabs"
+					],
+					[
+						"inst",
+						"Package Control: Install Package"
+					],
+					[
+						"instal",
+						"Package Control: Install Package"
+					],
+					[
+						"Package Control: ",
+						"Package Control: List Packages"
+					],
+					[
+						"mod",
+						"Modific: Show uncommitted files"
+					],
+					[
+						"modi",
+						"Modific: Show uncommitted files"
+					],
+					[
+						"statu",
+						"Git: Status"
+					],
+					[
+						"disab",
+						"Package Control: Disable Package"
+					],
+					[
+						"eslint",
+						"Preferences: SublimeLinter Settings – Default"
+					],
+					[
+						"jsh",
+						"JSHint"
+					],
+					[
+						"linter",
+						"SublimeLinter: Next Error"
+					],
+					[
+						"lin",
+						"SublimeLinter: Show All Errors"
+					]
+				],
+				"width": 650.0
+			},
+			"console":
+			{
+				"height": 126.0,
+				"history":
+				[
+					"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+				]
+			},
+			"distraction_free":
+			{
+				"menu_visible": true,
+				"show_minimap": false,
+				"show_open_files": false,
+				"show_tabs": false,
+				"side_bar_visible": false,
+				"status_bar_visible": false
+			},
+			"expanded_folders":
+			[
+				"/C/git/mosaic-web/src/ui",
+				"/C/git/mosaic-web/src/ui/mosaic",
+				"/C/git/mosaic-web/src/ui/mosaic/widgets",
+				"/C/git/mosaic-web/src/ui/mosaic/widgets/peopleCard",
+				"/C/git/mosaic-web/src/ui/mosaic/widgets/peopleCard/nls",
+				"/C/git/Galileo-Web",
+				"/C/git/Galileo-Web/app/directives/alerts_menu",
+				"/C/git/Galileo-Web/app/directives/user_avatar",
+				"/C/git/Galileo-Web/app/directives/uservoice",
+				"/C/git/Galileo-Web/grunt-tasks"
+			],
+			"file_history":
+			[
+				"/C/git/Galileo-Web/grunt-tasks/concurrent.js",
+				"/C/git/Galileo-Web/app/providers/modal.prv.js",
+				"/C/git/Galileo-Web/grunt-tasks/watch.js",
+				"/C/git/Galileo-Web/app/pages/all_projects/all_projects.html",
+				"/C/git/Galileo-Web/app/providers/lmv.srv.js",
+				"/C/git/Galileo-Web/app/providers/locale.fac.js",
+				"/C/git/Galileo-Web/app/providers/mixpanel.srv.js",
+				"/C/git/Galileo-Web/app/providers/timezones.js",
+				"/C/git/Galileo-Web/app/providers/transition_helper.srv.js",
+				"/C/git/Galileo-Web/app/providers/models/tasks_repo.srv.js",
+				"/C/git/Galileo-Web/app/providers/api/data.srv.js",
+				"/C/git/Galileo-Web/app/providers/api/notifications.srv.js",
+				"/C/git/Galileo-Web/app/providers/api/projects.srv.js",
+				"/C/git/Galileo-Web/app/providers/api/search.srv.js",
+				"/C/git/Galileo-Web/app/providers/api/tasks_api.srv.js",
+				"/C/git/Galileo-Web/app/directives/team_stack/team_stack.dir.js",
+				"/C/git/Galileo-Web/app/providers/time_ago.fac.js",
+				"/C/git/Galileo-Web/grunt-tasks/server.js",
+				"/C/git/Galileo-Web/grunt-tasks/connect.js",
+				"/C/git/Galileo-Web/app/a360.deps.js",
+				"/C/git/Galileo-Web/app/a360.cfg.js",
+				"/C/git/Galileo-Web/app/pages/all_projects/controllers/all_projects.ctrl.js",
+				"/C/git/Galileo-Web/app/pages/all_projects/all_projects.cfg.js",
+				"/C/git/Galileo-Web/app/pages/all_projects/all_projects.deps.js",
+				"/C/git/Galileo-Web/app/directives/uservoice/uservoice.dir.js",
+				"/C/git/mosaic-web/grunt-tasks/server.js",
+				"/C/git/Galileo-Web/app/requireConfig.js",
+				"/C/git/Galileo-Web/grunt-tasks/concat.js",
+				"/C/git/Galileo-Web/grunt-tasks/generateShim.js",
+				"/C/git/mosaic-web/node_modules/grunt-google-cdn/node_modules/bower/templates/search-empty.mustache",
+				"/C/git/mosaic-web/server.js",
+				"/C/Users/federico.ponte/AppData/Roaming/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+				"/C/git/Galileo-Web/app/providers/api/api.srv.js",
+				"/C/git/Galileo-Web/app/directives/messages/messages.dir.js",
+				"/C/git/Galileo-Web/app/config/requireConfig.tmpl.js",
+				"/C/git/Galileo-Web/eslint.json",
+				"/C/Users/federico.ponte/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+				"/C/Users/federico.ponte/AppData/Roaming/Sublime Text 3/Packages/TidyTabs-Sublime/TidyTabs.sublime-settings",
+				"/C/Users/federico.ponte/AppData/Roaming/Sublime Text 3/Packages/FileModifyStatus/File Modify Status.sublime-settings",
+				"/C/Users/federico.ponte/eslint.conf",
+				"/C/Users/federico.ponte/AppData/Roaming/Sublime Text 3/Packages/User/SublimeLinter.sublime-settings",
+				"/C/git/Galileo-Web/app/modules/galileo.js",
+				"/C/git/Galileo-Web/app/index.html",
+				"/C/git/Galileo-Web/app/directives/masthead/masthead.dir.js",
+				"/C/git/Galileo-Web/app/module_definitions.js",
+				"/C/git/Galileo-Web/node_modules/karma/karma-completion.sh",
+				"/C/git/Galileo-Web/app/vendor/bower_components/marked/component.json",
+				"/C/git/Galileo-Web/app/vendor/bower_components/galileo-components/build/components.css",
+				"/C/git/Galileo-Web/node_modules/grunt-aws/caches/galileo.dev.autodesk360beta.com.json",
+				"/C/git/Galileo-Web/app/providers/google_analytics.srv.js",
+				"/C/git/mosaic-web/Gruntfile.js",
+				"/C/git/Galileo-Web/app/build/styles.css",
+				"/C/Users/federico.ponte/Desktop/Default (Linux).sublime-keymap",
+				"/C/Users/federico.ponte/AppData/Roaming/Sublime Text 3/Packages/User/Default (Windows).sublime-keymap",
+				"/C/Users/federico.ponte/Desktop/Preferences.sublime-settings",
+				"/C/git/Galileo-Web/Gruntfile.js",
+				"/C/git/mosaic-web/bower.json",
+				"/C/git/mosaic-web/conf/eslint.json",
+				"/C/Users/federico.ponte/AppData/Roaming/Sublime Text 3/Packages/SublimeLinter/SublimeLinter.sublime-settings",
+				"/C/Users/federico.ponte/Desktop/hosts.leo",
+				"/C/git/mosaic-web/grunt-tasks/build.js",
+				"/C/Users/federico.ponte/Desktop/hosts",
+				"/C/git/mosaic-web/grunt-tasks/less.js",
+				"/C/git/mosaic-web/conf/gruntConfig.js",
+				"/C/Users/federico.ponte/Desktop/Sublime Settings.sublime-settings"
+			],
+			"find":
+			{
+				"height": 27.0
+			},
+			"find_in_files":
+			{
+				"height": 91.0,
+				"where_history":
+				[
+					"C:\\git\\Galileo-Web",
+					""
+				]
+			},
+			"find_state":
+			{
+				"case_sensitive": false,
+				"find_history":
+				[
+					"teamMembers",
+					"generateShim",
+					"teamMembers",
+					"teamMemers",
+					"generateSh",
+					"tabs"
+				],
+				"highlight": true,
+				"in_selection": false,
+				"preserve_case": false,
+				"regex": false,
+				"replace_history":
+				[
+				],
+				"reverse": false,
+				"show_context": true,
+				"use_buffer2": true,
+				"whole_word": false,
+				"wrap": true
+			},
+			"folders":
+			[
+				{
+					"follow_symlinks": true,
+					"path": "C:\\git\\mosaic-web"
+				},
+				{
+					"follow_symlinks": true,
+					"path": "C:\\git\\Galileo-Web"
+				}
+			],
+			"groups":
+			[
+				{
+					"selected": 9,
+					"sheets":
+					[
+						{
+							"buffer": 0,
+							"file": "/C/git/Galileo-Web/app/pages/all_projects/controllers/all_projects.ctrl.js",
+							"semi_transient": false,
+							"settings":
+							{
+								"buffer_size": 2788,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										551,
+										551
+									]
+								],
+								"settings":
+								{
+									"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+									"tab_size": 4,
+									"translate_tabs_to_spaces": true
+								},
+								"translation.x": 0.0,
+								"translation.y": 0.0,
+								"zoom_level": 1.0
+							},
+							"stack_index": 10,
+							"type": "text"
+						},
+						{
+							"buffer": 1,
+							"semi_transient": false,
+							"settings":
+							{
+								"buffer_size": 7517,
+								"regions":
+								{
+									"match":
+									{
+										"flags": 112,
+										"regions":
+										[
+											[
+												164,
+												175
+											],
+											[
+												356,
+												367
+											],
+											[
+												709,
+												720
+											],
+											[
+												1076,
+												1087
+											],
+											[
+												1384,
+												1395
+											],
+											[
+												1542,
+												1553
+											],
+											[
+												1875,
+												1886
+											],
+											[
+												1943,
+												1954
+											],
+											[
+												2060,
+												2071
+											],
+											[
+												2214,
+												2225
+											],
+											[
+												2527,
+												2538
+											],
+											[
+												2694,
+												2705
+											],
+											[
+												2756,
+												2767
+											],
+											[
+												2842,
+												2853
+											],
+											[
+												2943,
+												2954
+											],
+											[
+												3484,
+												3495
+											],
+											[
+												3718,
+												3729
+											],
+											[
+												4057,
+												4068
+											],
+											[
+												4186,
+												4197
+											],
+											[
+												4398,
+												4409
+											],
+											[
+												4660,
+												4671
+											],
+											[
+												4960,
+												4971
+											],
+											[
+												5194,
+												5205
+											],
+											[
+												5492,
+												5503
+											],
+											[
+												5738,
+												5749
+											],
+											[
+												5859,
+												5870
+											],
+											[
+												6158,
+												6169
+											],
+											[
+												6322,
+												6333
+											],
+											[
+												6653,
+												6664
+											],
+											[
+												6708,
+												6719
+											],
+											[
+												6783,
+												6794
+											],
+											[
+												6895,
+												6906
+											],
+											[
+												7143,
+												7154
+											],
+											[
+												7255,
+												7266
+											],
+											[
+												7301,
+												7312
+											],
+											[
+												7361,
+												7372
+											],
+											[
+												7433,
+												7444
+											]
+										],
+										"scope": ""
+									}
+								},
+								"selection":
+								[
+									[
+										515,
+										515
+									]
+								],
+								"settings":
+								{
+									"detect_indentation": false,
+									"line_numbers": false,
+									"output_tag": 1,
+									"result_base_dir": "",
+									"result_file_regex": "^([A-Za-z\\\\/<].*):$",
+									"result_line_regex": "^ +([0-9]+):",
+									"scroll_past_end": true,
+									"syntax": "Packages/Default/Find Results.hidden-tmLanguage"
+								},
+								"translation.x": 0.0,
+								"translation.y": 0.0,
+								"zoom_level": 1.0
+							},
+							"stack_index": 17,
+							"type": "text"
+						},
+						{
+							"buffer": 2,
+							"file": "/C/git/Galileo-Web/app/directives/team_stack/team_stack.html",
+							"semi_transient": false,
+							"settings":
+							{
+								"buffer_size": 401,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										0,
+										0
+									]
+								],
+								"settings":
+								{
+									"syntax": "Packages/HTML/HTML.tmLanguage",
+									"translate_tabs_to_spaces": false
+								},
+								"translation.x": 0.0,
+								"translation.y": 0.0,
+								"zoom_level": 1.0
+							},
+							"stack_index": 15,
+							"type": "text"
+						},
+						{
+							"buffer": 3,
+							"file": "/C/git/Galileo-Web/app/providers/api/members.srv.js",
+							"semi_transient": false,
+							"settings":
+							{
+								"buffer_size": 3936,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										0,
+										0
+									]
+								],
+								"settings":
+								{
+									"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+									"tab_size": 4,
+									"translate_tabs_to_spaces": true
+								},
+								"translation.x": 0.0,
+								"translation.y": 0.0,
+								"zoom_level": 1.0
+							},
+							"stack_index": 14,
+							"type": "text"
+						},
+						{
+							"buffer": 4,
+							"file": "/C/git/Galileo-Web/app/a360.cfg.js",
+							"semi_transient": false,
+							"settings":
+							{
+								"buffer_size": 1490,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										704,
+										704
+									]
+								],
+								"settings":
+								{
+									"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+									"tab_size": 4,
+									"translate_tabs_to_spaces": true
+								},
+								"translation.x": 0.0,
+								"translation.y": 0.0,
+								"zoom_level": 1.0
+							},
+							"stack_index": 13,
+							"type": "text"
+						},
+						{
+							"buffer": 5,
+							"file": "/C/git/Galileo-Web/grunt-tasks/connect.js",
+							"semi_transient": false,
+							"settings":
+							{
+								"buffer_size": 1042,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										709,
+										709
+									]
+								],
+								"settings":
+								{
+									"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+									"tab_size": 4,
+									"translate_tabs_to_spaces": true
+								},
+								"translation.x": 0.0,
+								"translation.y": 0.0,
+								"zoom_level": 1.0
+							},
+							"stack_index": 12,
+							"type": "text"
+						},
+						{
+							"buffer": 6,
+							"file": "/C/git/Galileo-Web/grunt-tasks/server.js",
+							"semi_transient": false,
+							"settings":
+							{
+								"buffer_size": 241,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										227,
+										227
+									]
+								],
+								"settings":
+								{
+									"open_with_edit": true,
+									"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+									"translate_tabs_to_spaces": false
+								},
+								"translation.x": 0.0,
+								"translation.y": 0.0,
+								"zoom_level": 1.0
+							},
+							"stack_index": 11,
+							"type": "text"
+						},
+						{
+							"buffer": 7,
+							"file": "/C/git/Galileo-Web/app/directives/user_avatar/user_avatar.dir.js",
+							"semi_transient": false,
+							"settings":
+							{
+								"buffer_size": 463,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										62,
+										62
+									]
+								],
+								"settings":
+								{
+									"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+									"tab_size": 4,
+									"translate_tabs_to_spaces": true
+								},
+								"translation.x": 0.0,
+								"translation.y": 0.0,
+								"zoom_level": 1.0
+							},
+							"stack_index": 5,
+							"type": "text"
+						},
+						{
+							"buffer": 8,
+							"file": "/C/git/Galileo-Web/app/pages/all_projects/all_projects.deps.js",
+							"semi_transient": false,
+							"settings":
+							{
+								"buffer_size": 595,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										386,
+										386
+									]
+								],
+								"settings":
+								{
+									"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+								},
+								"translation.x": 87.0,
+								"translation.y": 0.0,
+								"zoom_level": 1.0
+							},
+							"stack_index": 1,
+							"type": "text"
+						},
+						{
+							"buffer": 9,
+							"file": "/C/git/Galileo-Web/README.md",
+							"semi_transient": false,
+							"settings":
+							{
+								"buffer_size": 1884,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										1557,
+										1557
+									]
+								],
+								"settings":
+								{
+									"parser": "github",
+									"syntax": "Packages/Markdown/Markdown.tmLanguage",
+									"tab_size": 4,
+									"target": "disk",
+									"translate_tabs_to_spaces": false
+								},
+								"translation.x": 0.0,
+								"translation.y": 399.0,
+								"zoom_level": 1.0
+							},
+							"stack_index": 0,
+							"type": "text"
+						},
+						{
+							"buffer": 10,
+							"file": "/C/git/Galileo-Web/app/pages/project/project.ctrl.js",
+							"semi_transient": true,
+							"settings":
+							{
+								"buffer_size": 3060,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										0,
+										0
+									]
+								],
+								"settings":
+								{
+									"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+									"translate_tabs_to_spaces": false
+								},
+								"translation.x": 0.0,
+								"translation.y": 0.0,
+								"zoom_level": 1.0
+							},
+							"stack_index": 2,
+							"type": "text"
+						},
+						{
+							"buffer": 11,
+							"file": "/C/git/Galileo-Web/grunt-tasks/eslint.js",
+							"semi_transient": false,
+							"settings":
+							{
+								"buffer_size": 135,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										134,
+										134
+									]
+								],
+								"settings":
+								{
+									"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+								},
+								"translation.x": 0.0,
+								"translation.y": 0.0,
+								"zoom_level": 1.0
+							},
+							"stack_index": 3,
+							"type": "text"
+						},
+						{
+							"buffer": 12,
+							"file": "/C/git/Galileo-Web/grunt-tasks/build.js",
+							"semi_transient": false,
+							"settings":
+							{
+								"buffer_size": 449,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										433,
+										433
+									]
+								],
+								"settings":
+								{
+									"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+									"tab_size": 4,
+									"translate_tabs_to_spaces": true
+								},
+								"translation.x": 0.0,
+								"translation.y": 0.0,
+								"zoom_level": 1.0
+							},
+							"stack_index": 4,
+							"type": "text"
+						},
+						{
+							"buffer": 13,
+							"semi_transient": false,
+							"settings":
+							{
+								"buffer_size": 8996,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										0,
+										0
+									]
+								],
+								"settings":
+								{
+									"syntax": "Packages/Text/Plain text.tmLanguage"
+								},
+								"translation.x": 0.0,
+								"translation.y": 1653.0,
+								"zoom_level": 1.0
+							},
+							"stack_index": 6,
+							"type": "text"
+						},
+						{
+							"buffer": 14,
+							"semi_transient": false,
+							"settings":
+							{
+								"buffer_size": 27756,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										27756,
+										27756
+									]
+								],
+								"settings":
+								{
+									"syntax": "Packages/Text/Plain text.tmLanguage",
+									"word_wrap": true
+								},
+								"translation.x": 0.0,
+								"translation.y": 0.0,
+								"zoom_level": 1.0
+							},
+							"stack_index": 7,
+							"type": "text"
+						},
+						{
+							"buffer": 15,
+							"file": "/C/git/Galileo-Web/app/directives/alerts_menu/alerts_menu.dir.js",
+							"semi_transient": false,
+							"settings":
+							{
+								"buffer_size": 465,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										169,
+										169
+									]
+								],
+								"settings":
+								{
+									"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+									"tab_size": 4,
+									"translate_tabs_to_spaces": true
+								},
+								"translation.x": 0.0,
+								"translation.y": 0.0,
+								"zoom_level": 1.0
+							},
+							"stack_index": 8,
+							"type": "text"
+						},
+						{
+							"buffer": 16,
+							"file": "/C/git/Galileo-Web/app/pages/all_projects/all_projects.cfg.js",
+							"semi_transient": false,
+							"settings":
+							{
+								"buffer_size": 909,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										485,
+										485
+									]
+								],
+								"settings":
+								{
+									"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+									"tab_size": 4,
+									"translate_tabs_to_spaces": true
+								},
+								"translation.x": 0.0,
+								"translation.y": 0.0,
+								"zoom_level": 1.0
+							},
+							"stack_index": 9,
+							"type": "text"
+						},
+						{
+							"buffer": 17,
+							"file": "/C/git/Galileo-Web/app/config/requireConfig.tmpl.js",
+							"semi_transient": false,
+							"settings":
+							{
+								"buffer_size": 1407,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										1407,
+										1407
+									]
+								],
+								"settings":
+								{
+									"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+									"tab_size": 4,
+									"translate_tabs_to_spaces": true
+								},
+								"translation.x": 0.0,
+								"translation.y": 0.0,
+								"zoom_level": 1.0
+							},
+							"stack_index": 16,
+							"type": "text"
+						}
+					]
+				}
+			],
+			"incremental_find":
+			{
+				"height": 33.0
+			},
+			"input":
+			{
+				"height": 33.0
+			},
+			"layout":
+			{
+				"cells":
+				[
+					[
+						0,
+						0,
+						1,
+						1
+					]
+				],
+				"cols":
+				[
+					0.0,
+					1.0
+				],
+				"rows":
+				[
+					0.0,
+					1.0
+				]
+			},
+			"menu_visible": true,
+			"output.exec":
+			{
+				"height": 122.0
+			},
+			"output.find_results":
+			{
+				"height": 0.0
+			},
+			"position": "0,2,3,-32000,-32000,-1,-1,899,1673,113,2466",
+			"project": "",
+			"replace":
+			{
+				"height": 50.0
+			},
+			"save_all_on_build": true,
+			"select_file":
+			{
+				"height": 0.0,
+				"selected_items":
+				[
+					[
+						"server",
+						"Galileo-Web\\grunt-tasks\\server.js"
+					],
+					[
+						"ser",
+						"mosaic-web\\grunt-tasks\\server.js"
+					],
+					[
+						"grunfi",
+						"Gruntfile.js"
+					]
+				],
+				"width": 0.0
+			},
+			"select_project":
+			{
+				"height": 0.0,
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"select_symbol":
+			{
+				"height": 0.0,
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"selected_group": 0,
+			"settings":
+			{
+			},
+			"show_minimap": true,
+			"show_open_files": false,
+			"show_tabs": true,
+			"side_bar_visible": true,
+			"side_bar_width": 207.0,
+			"status_bar_visible": true,
+			"template_settings":
+			{
+			},
+			"window_id": 1,
+			"workspace_name": ""
+		}
+	],
+	"workspaces":
+	{
+		"recent_workspaces":
+		[
+		]
+	}
+}

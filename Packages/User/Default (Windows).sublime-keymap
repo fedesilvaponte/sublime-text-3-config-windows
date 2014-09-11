@@ -1,0 +1,115 @@
+[
+  // map jj en lugar de ESC 
+	{ "keys": ["j", "j"], "command": "exit_insert_mode",
+		"context":
+		[
+			{ "key": "setting.command_mode", "operand": false },
+			{ "key": "setting.is_widget", "operand": false }
+		]
+	},
+  // Map ff para buscar
+	{ "keys": ["f", "f"], "command": "show_panel", "args": {"panel": "incremental_find", "reverse":false}, 
+		"context":
+		[
+			{ "key": "setting.command_mode", "operand": true },
+			{ "key": "setting.is_widget", "operand": false }
+		]
+	},
+  //Close Buffer
+  { "keys": ["ctrl+w"], "command": "close",  
+    "context":
+    [
+      { "key": "setting.command_mode", "operand": true },
+      { "key": "setting.is_widget", "operand": false }
+    ]
+  },
+  // Ir a  variable
+	{ "keys": ["f2"], 
+    "command": "show_overlay", "args": {"overlay": "goto", "text": "@"},
+    "context":[
+        { "key": "setting.command_mode"}
+    ] 
+  },
+  //Mostrar sidebar
+  { "keys": ["f9"], "command": "toggle_side_bar" },
+  //Motrar la paleta de comandos
+	//{ "keys": ["ctrl+m"], 
+	//  "command": "show_overlay", "args": {"overlay": "command_palette", "text": "Snippet: "}
+  //},
+  //Abrir proyecto
+	{ "keys": ["ctrl+shift+o"], "command": "prompt_select_project" },
+  //Bookmarks
+  { 
+    "keys": [","], "command": "next_bookmark" ,
+      "context":[
+        { "key": "setting.command_mode"}
+    ] 
+  },
+	{ "keys": ["ctrl+shift+f2"], "command": "clear_bookmarks" },
+  { 
+    "keys": ["m"], "command": "toggle_bookmark",
+    "context":[
+      { "key": "setting.command_mode"}
+    ] 
+  },
+  //Para foldear
+  { "keys": ["z","f"], "command": "fold" },
+  { "keys": ["z","a"], "command": "unfold",
+    "context":
+    [
+      { "key": "setting.command_mode", "operand": true },
+      { "key": "setting.is_widget", "operand": false }
+    ]
+  },
+  //Fuzzy File nav
+  { "keys": ["ctrl+i"], "command": "fuzzy_start_from_file" },
+  //Moving buffers
+  //{ "keys": ["right"], "command": "next_view" },
+  //{ "keys": ["left"], "command": "prev_view" },
+  /**
+   * Split windows
+   */
+  {
+    "keys": ["super+right"],
+    "command": "set_layout",
+    "args":
+    {
+      "cols": [0.0, 0.33, 1.0],
+      "rows": [0.0, 1.0],
+      "cells": [[0, 0, 1, 1], [1, 0, 2, 1]]
+    }
+  },
+
+  { "keys": ["ctrl+l"], "command": "focus_group", "args": { "group": 1},
+    "context":
+    [
+      { "key": "setting.command_mode", "operand": true },
+      { "key": "setting.is_widget", "operand": false }
+    ]
+  },
+  { "keys": ["ctrl+h"], "command": "focus_group", "args": { "group": 0},
+    "context":
+    [
+      { "key": "setting.command_mode", "operand": true },
+      { "key": "setting.is_widget", "operand": false }
+    ]
+  },
+  //Toggle comment
+  { "keys": [",","c"], "command": "toggle_comment",
+    "context":
+    [
+      { "key": "setting.command_mode", "operand": true },
+      { "key": "setting.is_widget", "operand": false }
+    ]
+  },
+  {
+    "keys": ["super+left"],
+    "command": "set_layout",
+    "args":
+    {
+      "cols": [0.0, 0.66, 1.0],
+      "rows": [0.0, 1.0],
+      "cells": [[0, 0, 1, 1], [1, 0, 2, 1]]
+    }
+  }
+]

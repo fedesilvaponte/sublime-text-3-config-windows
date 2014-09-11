@@ -1,0 +1,17 @@
+{
+	"color_scheme": "Packages/User/Monokai (SL).tmTheme",
+	"drag_text": true,
+	"font_size": 12,
+	"gutter": true,
+	"highlight_line": true,
+	"highlight_modified_tabs": true,
+	"ignored_packages":
+	[
+		"Markdown",
+		"JSHint Gutter"
+	],
+	"theme": "Nil.sublime-theme",
+	"tidytabs_run_on_post_save": true,
+	"vintage_start_in_command_mode": true,
+	"wide_caret": true
+}
